@@ -1,19 +1,28 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import Layout from '@/views/Layout.vue'
 
 const routes = [
   {
     path: '/',
-    name: 'home',
-    component: HomeView
+    redirect: '/login'
   },
   {
-    path: '/about',
-    name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
+    path: '/login',
+    component: Layout, // 登入版面
+    children: [
+      { path: '', component: () => import('../components/Login.vue') }
+    ]
+  },
+  {
+    path: '/register',
+    component: Layout, // 註冊也用相同 Layout
+    children: [
+      { path: '', component: () => import('../components/Register.vue') }
+    ]
+  },
+  {
+    path: '/todo',
+    component: () => import('../views/Todolist.vue') // 不使用 Layout
   }
 ]
 
