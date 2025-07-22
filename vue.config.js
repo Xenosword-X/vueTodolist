@@ -1,4 +1,5 @@
 module.exports = {
+  publicPath: '/vueTodolist/',
   transpileDependencies: true,
   css: {
     loaderOptions: {
