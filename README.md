@@ -1,9 +1,9 @@
-# API Todo List 練習作品｜使用遠端 API 與驗證功能
+# VUE Todo List 練習作品｜使用遠端 API 與驗證功能
 
-這是一個使用原生 JavaScript 製作的 Todo List 應用，串接遠端 API 並加入註冊 / 登入驗證功能。主要練習項目包括 API 資料串接、使用者驗證流程、資料新增刪改操作與前端邏輯處理。
+這是一個使用 Vue3 Composition 製作的 Todo List 應用，串接遠端 API 並加入註冊 / 登入驗證功能。主要練習項目包括 API 資料串接、使用者驗證流程、資料新增刪改操作與前端邏輯處理。
 
 🔗 **Demo 線上預覽**  
-👉 [點我查看](https://xenosword-x.github.io/APITodo_project/index.html)
+👉 [點我查看](https://xenosword-x.github.io/vueTodolist/index.html)
 
 ---
 
